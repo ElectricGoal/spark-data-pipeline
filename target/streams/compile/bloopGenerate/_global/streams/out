@@ -1,4 +1,0 @@
-[debug] [spark-etl-v2] Classpath dependencies List()
-[debug] [spark-etl-v2] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'spark-etl-v2' to '/home/electricgoal/Documents/playground/data_engineer/spark-etl-v2/.bloop/spark-etl-v2.json'
-[success] Generated .bloop/spark-etl-v2.json
