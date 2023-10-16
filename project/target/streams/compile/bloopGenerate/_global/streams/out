@@ -1,4 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m[spark-etl-v2-build] Classpath dependencies List()[0m
-[0m[[0m[0mdebug[0m] [0m[0m[spark-etl-v2-build] Dependencies from configurations List()[0m
-[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'spark-etl-v2-build' to '/home/electricgoal/Documents/playground/data_engineer/spark-etl-v2/project/.bloop/spark-etl-v2-build.json'[0m
-[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/spark-etl-v2-build.json[0m
