@@ -1,8 +1,12 @@
 # spark-data-pipeline
 
+This repo is about setting up and running spark data pipeline in scala. I want to build this pipeline as abstract as possible for future using.  
+
 (In developing)
 
 Setting up and building an abstract spark data pipeline with Hadoop, Hive, Spark
+
+Future feature: adding Kafka and Superset
 
 ### Set up
 
@@ -10,6 +14,7 @@ The step that takes the most time (in my case 90%)
 
 There are several tutorials from Internet for these types of installations, but I will list some website that I relied on and had success with Ubuntu 22.04:
 - Scala 2.12: https://www.scala-lang.org/download 
+- Sbt: https://www.scala-sbt.org/download.html 
 - Hadoop 3.5: https://www.howtoforge.com/how-to-install-apache-hadoop-on-ubuntu-22-04
 - Spark 3.5.0: when you install Hadoop and run successfully, this step may easy
 - Hive 3.1.3: I have to combine many tutorial source to get my Hive running completely. However, I think this is the critical source that I almost consulted: https://sparkbyexamples.com/apache-hive/apache-hive-installation-on-hadoop
@@ -43,9 +48,19 @@ sudo cp ./target/scala-2.12/spark-etl_2.12-1.0.jar /home/sharedFoler/spark-etl.j
 
 ```
 # Ingest data from source to hdfs
+# Args: 
+#   soureFd: file need to load
+#   saveFd: folder in Hdfs
+#   executionDate: running date           
 spark-submit --class Ingestion /home/sharedFoler/spark-etl.jar --sourceFd /home/sharedFoler/data/links.csv --saveFd links --executionDate 2023-10-08
+```
 
+```
 # Transform data and load to Hive
+# Args: 
+#   soureFd: HDFS Folder need to load
+#   tableName: table in Hive (if not exist, it will create automatically)
+#   executionDate: running date  
 spark-submit --class Transformation /home/sharedFoler/spark-etl.jar --sourceFd links --tableName test.links --executionDate 2023-10-08
 
 ```
