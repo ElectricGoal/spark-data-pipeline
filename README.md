@@ -1,6 +1,6 @@
 # spark-data-pipeline
 
-This repo is about setting up and running spark data pipeline in scala. I want to build this pipeline as abstract as possible for future using.  
+This repo is about setting up and running spark data pipeline in scala. I want to build this pipeline as abstract as possible for future use.  
 
 (In developing)
 
