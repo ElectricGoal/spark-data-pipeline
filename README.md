@@ -1,10 +1,10 @@
 # spark-data-pipeline
 
-This repo is about setting up and running spark data pipeline in scala. I want to build this pipeline as abstract as possible for future use.  
+This repo is about setting up and running spark data pipeline in Scala. I want to build this pipeline as abstract as possible for future use.  
 
 (In developing)
 
-Setting up and building an abstract spark data pipeline with Hadoop, Hive, Spark
+Main technologies: Hadoop, Hive, Spark
 
 Future feature: adding Kafka and Superset
 
